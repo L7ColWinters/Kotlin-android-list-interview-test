@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_item_add_user" android:title="Add User"/>
+    <item android:id="@+id/menu_item_sort_user_first" android:title="Sort User First" />
+    <item android:id="@+id/menu_item_sort_user_last" android:title="Sort User Last" />
+    <item android:id="@+id/menu_item_sort_user_phone" android:title="Sort User Phone" />
+</menu>
