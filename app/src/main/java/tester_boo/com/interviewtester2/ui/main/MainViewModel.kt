@@ -8,12 +8,12 @@ import tester_boo.com.interviewtester2.model.User
 
 class MainViewModel : ViewModel() {
 
-    private val usersLiveData = MutableLiveData<ArrayList<User>>()
-    val users: LiveData<ArrayList<User>>
+    private val usersLiveData = MutableLiveData<List<User>>()
+    val users: LiveData<List<User>>
         get() = usersLiveData
 
     init {
-        usersLiveData.value = ArrayList(InterviewApplication.graph.getUserRepo().getUsers())
+        usersLiveData.value = InterviewApplication.graph.getUserRepo().getUsers()
     }
 
     fun addUser(user: User) {

@@ -9,7 +9,7 @@ import android.widget.TextView
 import tester_boo.com.interviewtester2.R
 import tester_boo.com.interviewtester2.model.User
 
-class UserAdapter() : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
+class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     var users: List<User> = emptyList()
         set(value) {
