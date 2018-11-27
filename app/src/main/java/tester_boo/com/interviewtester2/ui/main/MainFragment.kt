@@ -35,7 +35,7 @@ class MainFragment : Fragment() {
         recycler.adapter = adapter
 
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        viewModel.users.observe(this, Observer<ArrayList<User>>{
+        viewModel.users.observe(this, Observer<List<User>>{
             adapter.users = it!!//usually a bad idea
         })
     }
